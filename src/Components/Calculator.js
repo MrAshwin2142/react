@@ -1,6 +1,7 @@
 import React from 'react'
 import { Form } from 'react-bootstrap';
 import { useState } from 'react'
+import Navbar2 from '../task2/Navbar2';
 
 function Calculator() {
     const [numbers, setNumbers] = useState({
@@ -8,14 +9,15 @@ function Calculator() {
         num2: "",
       });
 
-      const handleSubmit = (event) => {
+      // const handleSubmit = (event) => {
         
-        alert("the sum is ", numbers.num1+numbers.num2)
-      };
+      //   alert("the sum is ", numbers.num1+numbers.num2)
+      // };
   return (
     <div >
+      <Navbar2/>
       <form className="mb-3">
-        <div>
+        <div className="container">
           <h3>Calculator</h3>
         </div>
         <div>
